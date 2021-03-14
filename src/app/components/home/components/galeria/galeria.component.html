@@ -1,0 +1,61 @@
+<div *ngIf="peliculas.length>0" class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[0] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[0].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[0].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[1] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[1].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[1].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[2] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[2].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[2].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[3] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[3].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[3].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[4] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[4].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[4].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-auto">
+            <img [src]="peliculas[5] | noimage" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{peliculas[5].title}}</h5>
+                <a class="btn btn-outline-primary" [routerLink]="['/pelicula', peliculas[5].id, 'home']">Ver Detalles</a>
+            </div>
+        </div>
+    </div>
+</div>

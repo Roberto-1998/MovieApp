@@ -1,0 +1,22 @@
+h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 5px rgba(150, 150, 150, 0.65);
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+p,
+span {
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+span {
+    margin: 5px;
+}

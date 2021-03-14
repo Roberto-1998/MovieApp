@@ -1,0 +1,31 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-1">Welcome to MovieClub</h1>
+        <p class="text-muted">Find out all the information about any movies and see what is comming soon.</p>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <section>
+        <h2>Comming Soon</h2>
+        <app-galeria [peliculas]="cartelera"></app-galeria>
+    </section>
+
+    <section>
+        <h2>Populares</h2>
+        <app-galeria [peliculas]="populares"></app-galeria>
+    </section>
+
+    <section>
+        <h2>Mejores Clasificaciones</h2>
+        <app-galeria [peliculas]="topRated"></app-galeria>
+    </section>
+</div>
+
+
+
+<ngx-spinner bdColor="rgba(6,6,13,0.65)" size="medium" color="#1bccd3" type="timer" [fullScreen]="true">
+    <p style="color: white"> Cargando </p>
+</ngx-spinner>

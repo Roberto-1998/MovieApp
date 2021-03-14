@@ -1,0 +1,28 @@
+input {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h5 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+@media screen and (max-width:500px) {
+    .buscador {
+        width: 100% !important;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:766px) {
+    .buscador {
+        width: 100% !important;
+    }
+    input {
+        width: 70%;
+    }
+}

@@ -1,0 +1,46 @@
+<section class="mt-5" *ngIf="peliculaDetails">
+
+
+
+    <div class="container">
+        <h1 class="text-center">
+            {{peliculaDetails.title}}
+        </h1>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img [src]="peliculaDetails |noimage" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h1><span class="badge bg-primary"> {{peliculaDetails.vote_average}}</span></h1>
+                <h3 class="display-4">Overview</h3>
+                <p>{{peliculaDetails.overview}}</p>
+
+                <div *ngIf="peliculaDetails.tagline">
+                    <hr>
+                    <h3 class="display-4">Tagline</h3>
+                    <blockquote class="blockquote">{{peliculaDetails.tagline}}</blockquote>
+                </div>
+
+                <hr>
+                <h3 class="display-4">Genres</h3>
+                <p><span style="margin-right: 5px;" *ngFor="let genre of peliculaDetails.genres" class="badge bg-danger">{{genre.name}}</span></p>
+
+                <div *ngIf="peliculaDetails.production_companies.length>0">
+                    <hr>
+                    <h3 class="display-4">{{peliculaDetails.production_companies.length>0 ? 'Companies' : 'Company'}}</h3>
+                    <p><span style="margin-right: 5px;" *ngFor="let company of peliculaDetails.production_companies" class="badge bg-success">{{company.name}}</span></p>
+                </div>
+                <button type="button" class="btn btn-outline-danger mt-2" [routerLink]="['/'+paginaAnterior, busqueda]">
+                    Regresar
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<ngx-spinner bdColor="rgba(6,6,13,0.65)" size="medium" color="#1bccd3" type="timer" [fullScreen]="true">
+    <p style="color: white"> Cargando </p>
+</ngx-spinner>
