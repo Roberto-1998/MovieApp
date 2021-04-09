@@ -45,9 +45,9 @@ export class PeliculasService {
 
   getPopulares() {
 
-    /*  let params=new HttpParams();
+     let params=new HttpParams();
      params=params.append('sort_by', 'popularity.desc');
-     params=params.append('api_key', this.apiKey); */
+     params=params.append('api_key', this.apiKey);
 
 
 
