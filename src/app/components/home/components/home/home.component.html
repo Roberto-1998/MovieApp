@@ -8,17 +8,17 @@
 
 
 <div class="container">
-    <section>
+    <section *ngIf="cartelera.length>0">
         <h2>Comming Soon</h2>
         <app-galeria [peliculas]="cartelera"></app-galeria>
     </section>
 
-    <section>
+    <section *ngIf="populares.length>0">
         <h2>Populares</h2>
         <app-galeria [peliculas]="populares"></app-galeria>
     </section>
 
-    <section>
+    <section *ngIf="topRated.length>0">
         <h2>Mejores Clasificaciones</h2>
         <app-galeria [peliculas]="topRated"></app-galeria>
     </section>
