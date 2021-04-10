@@ -1,4 +1,4 @@
-<div class="buscador" class="container mt-5 ">
+<div class="buscador" class="container pt-5 ">
     <input [(ngModel)]="texto" (keydown.enter)="buscarPeliculas()" class="form-control" type="search" placeholder="Buscar pelicula" aria-label="Search">
 </div>
 
@@ -9,7 +9,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div *ngFor="let pelicula of peliculas" class="col">
             <div class="card h-auto">
-                <img [src]="pelicula | noimage" class="card-img-top" alt="...">
+                <!--  <img [src]="pelicula | noimage" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                     <h5 class="card-title">{{pelicula.title}}</h5>
                     <a class="btn btn-outline-primary" [routerLink]="['/pelicula', pelicula.id, 'buscar', texto]">Ver Detalles</a>
