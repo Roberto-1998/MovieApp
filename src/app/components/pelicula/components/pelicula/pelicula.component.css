@@ -8,7 +8,8 @@ h1 {
 h3 {
     font-size: 1.4em;
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 p,
@@ -17,6 +18,19 @@ span {
     font-weight: normal;
 }
 
+blockquote {
+    font-size: 1.0em;
+}
+
 span {
     margin: 5px;
+}
+
+h1,
+h3,
+p,
+span,
+blockquote,
+hr {
+    color: whitesmoke;
 }

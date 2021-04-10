@@ -1,4 +1,4 @@
-<section class="mt-5" *ngIf="peliculaDetails">
+<section class="pt-5" *ngIf="peliculaDetails">
 
 
 
@@ -11,7 +11,7 @@
                 <img [src]="peliculaDetails |noimage" class="img-fluid">
             </div>
             <div class="col-md-6">
-                <h1><span class="badge bg-primary"> {{peliculaDetails.vote_average}}</span></h1>
+                <h1><span class="badge bg-primary"> {{peliculaDetails.vote_average}}/10</span></h1>
                 <h3 class="display-4">Overview</h3>
                 <p>{{peliculaDetails.overview}}</p>
 
@@ -28,7 +28,7 @@
                 <div *ngIf="peliculaDetails.production_companies.length>0">
                     <hr>
                     <h3 class="display-4">{{peliculaDetails.production_companies.length>0 ? 'Companies' : 'Company'}}</h3>
-                    <p><span style="margin-right: 5px;" *ngFor="let company of peliculaDetails.production_companies" class="badge bg-success">{{company.name}}</span></p>
+                    <p><span style="margin-right: 5px;" *ngFor="let company of peliculaDetails.production_companies" class="badge bg-primary">{{company.name}}</span></p>
                 </div>
                 <button type="button" class="btn btn-outline-danger mt-2" [routerLink]="['/'+paginaAnterior, busqueda]">
                     Regresar
